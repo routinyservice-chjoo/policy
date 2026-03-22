@@ -3,102 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>プライバシーポリシー</title>
+    <title>Routiny プライバシーポリシー</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Noto Sans JP', sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.8; color: #333; }
-        h1 { font-size: 1.8em; border-bottom: 2px solid #845AEE; padding-bottom: 10px; }
-        h2 { font-size: 1.3em; margin-top: 2em; color: #845AEE; }
-        h3 { font-size: 1.1em; }
-        table { width: 100%; border-collapse: collapse; margin: 1em 0; }
-        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
-        th { background-color: #f5f0ff; }
-        ul { padding-left: 20px; }
-        a { color: #845AEE; }
-        .summary { background: #f5f0ff; padding: 16px; border-radius: 12px; margin: 1em 0; }
-        .footer { margin-top: 3em; padding-top: 1em; border-top: 1px solid #ddd; text-align: center; color: #888; font-size: 0.9em; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f9fafb;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .lang-switcher {
+            text-align: center;
+            padding: 12px;
+            margin-bottom: 20px;
+            background: #f3f4f6;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+
+        .lang-switcher a {
+            color: #3B82F6;
+            text-decoration: none;
+            padding: 0 8px;
+        }
+
+        .lang-switcher a:hover {
+            text-decoration: underline;
+        }
+
+        .lang-switcher .current {
+            font-weight: bold;
+            color: #1F2937;
+        }
+
+        h1 {
+            color: #3B82F6;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .app-name {
+            color: #6B7280;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #1F2937;
+            font-size: 24px;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #E5E7EB;
+        }
+
+        h3 {
+            color: #374151;
+            font-size: 18px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        p, li {
+            margin-bottom: 12px;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        .highlight {
+            background: #EFF6FF;
+            padding: 15px;
+            border-left: 4px solid #3B82F6;
+            margin: 20px 0;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #E5E7EB;
+            color: #6B7280;
+            font-size: 14px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #E5E7EB;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background: #F3F4F6;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
+<div class="container">
+    <div class="lang-switcher">
+        <a href="/policy/">한국어</a> |
+        <a href="/policy/en/">English</a> |
+        <span class="current">日本語</span>
+    </div>
 
-<h1>プライバシーポリシー</h1>
-<p>Routiny（ルティニ）- 習慣トラッカー</p>
+    <h1>プライバシーポリシー</h1>
+    <div class="app-name">Routiny（ルティニ）- 習慣トラッカー</div>
 
-<div class="summary">
-<strong>📌 概要</strong><br>
-Routinyは<strong>広告のないクリーンなアプリ</strong>です。<br>
-ユーザーの個人情報を収集せず、すべての習慣データはユーザーの端末にのみ保存されます。
+    <div class="highlight">
+        <strong>📌 概要</strong><br>
+        Routinyは<strong>広告のないクリーンなアプリ</strong>です。<br>
+        ユーザーの個人情報を収集せず、すべての習慣データはユーザーの端末にのみ保存されます。
+    </div>
+
+    <h2>1. 情報の収集と利用</h2>
+
+    <h3>1.1 ローカルに保存される情報</h3>
+    <p>Routinyはアプリ機能の提供のため、以下の情報を端末内部に保存します：</p>
+
+    <table>
+        <tr>
+            <th>項目</th>
+            <th>目的</th>
+            <th>保存場所</th>
+        </tr>
+        <tr>
+            <td>習慣名、設定</td>
+            <td>習慣管理機能の提供</td>
+            <td>ユーザーの端末内部（ローカルDB）</td>
+        </tr>
+        <tr>
+            <td>習慣完了記録</td>
+            <td>統計およびカレンダー表示</td>
+            <td>ユーザーの端末内部（ローカルDB）</td>
+        </tr>
+    </table>
+
+    <h3>1.2 個人情報を収集しません</h3>
+    <p>Routinyはサーバーを運営しておらず、以下の情報を一切収集・外部送信しません：</p>
+    <ul>
+        <li>氏名、メールアドレス、電話番号などの個人識別情報</li>
+        <li>位置情報（GPS）</li>
+        <li>端末識別情報（Android ID、ADID等）</li>
+        <li>連絡先およびメディアファイル</li>
+    </ul>
+
+    <h2>2. 広告および第三者サービス</h2>
+
+    <div class="highlight">
+        <strong>🚫 広告なし（No Ads）</strong><br>
+        本アプリはGoogle AdMobを含む一切の広告サービスを使用していません。<br>
+        そのため、広告識別子（Advertising ID）の収集やトラッキングは行いません。
+    </div>
+
+    <p>ユーザーデータを収集する第三者SDK（ソフトウェア開発キット）は一切使用していません。</p>
+
+    <h2>3. シェア機能</h2>
+
+    <p>Routinyはユーザーが習慣の達成状況をSNSにシェアできる機能を提供しています。</p>
+
+    <div class="highlight">
+        <strong>📤 シェア機能について</strong><br>
+        • シェアはユーザーの直接的な操作によってのみ行われます。<br>
+        • シェアされる内容：習慣名、達成状況、アプリブランディング<br>
+        • アプリはシェアされた内容を別途収集・保存しません。<br>
+        • シェア時は端末の標準シェア機能を使用し、第三者SDKによるデータ収集はありません。
+    </div>
+
+    <h2>4. データの保存と削除</h2>
+
+    <p><strong>保存：</strong>すべてのデータはユーザーの端末内部に安全に保存されます（Hive Database使用）。</p>
+    <p><strong>削除：</strong>退会手続きは不要です。<strong>アプリを削除すると、端末に保存されたすべてのデータが即座に完全に削除されます。</strong></p>
+
+    <h2>5. アプリの権限（Permissions）</h2>
+
+    <p>Routinyは機能に必要な最小限の権限のみを要求します。</p>
+    <table>
+        <tr>
+            <th>権限</th>
+            <th>使用目的</th>
+            <th>必須</th>
+        </tr>
+        <tr>
+            <td>通知（Notifications）</td>
+            <td>ユーザーが設定した時間に習慣リマインダーを送信するため（ローカル通知）</td>
+            <td>任意</td>
+        </tr>
+    </table>
+    <p>※ 通知権限を許可しなくても、アプリの基本機能（記録）はご利用いただけます。</p>
+
+    <h2>6. 児童のプライバシー保護</h2>
+    <p>当社は13歳未満の児童の個人情報を収集しません。アプリ自体が個人情報を要求・収集する機能がないため、お子様も安心してご利用いただけます。</p>
+
+    <h2>7. お問い合わせ</h2>
+    <p>本プライバシーポリシーに関するお問い合わせは、以下の連絡先までご連絡ください。</p>
+
+    <table>
+        <tr>
+            <th>担当</th>
+            <td>Routiny開発チーム</td>
+        </tr>
+        <tr>
+            <th>メール</th>
+            <td><a href="mailto:routinyservice@gmail.com">routinyservice@gmail.com</a></td>
+        </tr>
+    </table>
+
+    <h2>8. 変更について</h2>
+    <p><strong>施行日：</strong>2026年2月1日</p>
+    <p><strong>前バージョン：</strong>2025年12月12日</p>
+    <p>本ポリシーはアプリのアップデートに伴い変更される場合があります。変更時はアプリ内のお知らせにてご案内いたします。</p>
+
+    <div class="footer">
+        <p><strong>Routiny</strong></p>
+        <p>Contact: routinyservice@gmail.com</p>
+        <p>Copyright &copy; 2025-2026 Routiny. All rights reserved.</p>
+    </div>
 </div>
-
-<h2>1. 情報の収集と利用</h2>
-
-<h3>1.1 ローカルに保存される情報</h3>
-<p>Routinyはアプリ機能の提供のため、以下の情報を端末内部に保存します：</p>
-
-<table>
-<tr><th>項目</th><th>目的</th><th>保存場所</th></tr>
-<tr><td>習慣名、設定</td><td>習慣管理機能の提供</td><td>ユーザーの端末内部（ローカルDB）</td></tr>
-<tr><td>習慣完了記録</td><td>統計およびカレンダー表示</td><td>ユーザーの端末内部（ローカルDB）</td></tr>
-</table>
-
-<h3>1.2 個人情報を収集しません</h3>
-<p>Routinyはサーバーを運営しておらず、以下の情報を一切収集・外部送信しません：</p>
-<ul>
-    <li>氏名、メールアドレス、電話番号などの個人識別情報</li>
-    <li>位置情報（GPS）</li>
-    <li>端末識別情報（Android ID、ADID等）</li>
-    <li>連絡先およびメディアファイル</li>
-</ul>
-
-<h2>2. 広告および第三者サービス</h2>
-<p><strong>🚫 広告なし（No Ads）</strong><br>
-本アプリはGoogle AdMobを含む一切の広告サービスを使用していません。そのため、広告識別子（Advertising ID）の収集やトラッキングは行いません。</p>
-<p>ユーザーデータを収集する第三者SDK（ソフトウェア開発キット）は一切使用していません。</p>
-
-<h2>3. シェア機能</h2>
-<p>Routinyはユーザーが習慣の達成状況をSNSにシェアできる機能を提供しています。</p>
-<p><strong>📤 シェア機能について</strong></p>
-<ul>
-    <li>シェアはユーザーの直接的な操作によってのみ行われます。</li>
-    <li>シェアされる内容：習慣名、達成状況、アプリブランディング</li>
-    <li>アプリはシェアされた内容を別途収集・保存しません。</li>
-    <li>シェア時は端末の標準シェア機能を使用し、第三者SDKによるデータ収集はありません。</li>
-</ul>
-
-<h2>4. データの保存と削除</h2>
-<p><strong>保存：</strong>すべてのデータはユーザーの端末内部に安全に保存されます（Hive Database使用）。</p>
-<p><strong>削除：</strong>退会手続きは不要です。<strong>アプリを削除すると、端末に保存されたすべてのデータが即座に完全に削除されます。</strong></p>
-
-<h2>5. アプリの権限（Permissions）</h2>
-<p>Routinyは機能に必要な最小限の権限のみを要求します。</p>
-
-<table>
-<tr><th>権限</th><th>使用目的</th><th>必須</th></tr>
-<tr><td>通知（Notifications）</td><td>ユーザーが設定した時間に習慣リマインダーを送信するため（ローカル通知）</td><td>任意</td></tr>
-</table>
-
-<p>※ 通知権限を許可しなくても、アプリの基本機能（記録）はご利用いただけます。</p>
-
-<h2>6. 児童のプライバシー保護</h2>
-<p>当社は13歳未満の児童の個人情報を収集しません。アプリ自体が個人情報を要求・収集する機能がないため、お子様も安心してご利用いただけます。</p>
-
-<h2>7. お問い合わせ</h2>
-<p>本プライバシーポリシーに関するお問い合わせは、以下の連絡先までご連絡ください。</p>
-
-<table>
-<tr><td>担当</td><td>Routiny開発チーム</td></tr>
-<tr><td>メール</td><td><a href="mailto:routinyservice@gmail.com">routinyservice@gmail.com</a></td></tr>
-</table>
-
-<h2>8. 変更について</h2>
-<p><strong>施行日：</strong>2026年2月1日</p>
-<p><strong>前バージョン：</strong>2025年12月12日</p>
-<p>本ポリシーはアプリのアップデートに伴い変更される場合があります。変更時はアプリ内のお知らせにてご案内いたします。</p>
-
-<div class="footer">
-    <p><strong>Routiny</strong></p>
-    <p>Contact: routinyservice@gmail.com</p>
-    <p>Copyright &copy; 2025-2026 Routiny. All rights reserved.</p>
-</div>
-
 </body>
 </html>

@@ -3,102 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy</title>
+    <title>Routiny Privacy Policy</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; color: #333; }
-        h1 { font-size: 1.8em; border-bottom: 2px solid #845AEE; padding-bottom: 10px; }
-        h2 { font-size: 1.3em; margin-top: 2em; color: #845AEE; }
-        h3 { font-size: 1.1em; }
-        table { width: 100%; border-collapse: collapse; margin: 1em 0; }
-        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
-        th { background-color: #f5f0ff; }
-        ul { padding-left: 20px; }
-        a { color: #845AEE; }
-        .summary { background: #f5f0ff; padding: 16px; border-radius: 12px; margin: 1em 0; }
-        .footer { margin-top: 3em; padding-top: 1em; border-top: 1px solid #ddd; text-align: center; color: #888; font-size: 0.9em; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f9fafb;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .lang-switcher {
+            text-align: center;
+            padding: 12px;
+            margin-bottom: 20px;
+            background: #f3f4f6;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+
+        .lang-switcher a {
+            color: #3B82F6;
+            text-decoration: none;
+            padding: 0 8px;
+        }
+
+        .lang-switcher a:hover {
+            text-decoration: underline;
+        }
+
+        .lang-switcher .current {
+            font-weight: bold;
+            color: #1F2937;
+        }
+
+        h1 {
+            color: #3B82F6;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .app-name {
+            color: #6B7280;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #1F2937;
+            font-size: 24px;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #E5E7EB;
+        }
+
+        h3 {
+            color: #374151;
+            font-size: 18px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        p, li {
+            margin-bottom: 12px;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        .highlight {
+            background: #EFF6FF;
+            padding: 15px;
+            border-left: 4px solid #3B82F6;
+            margin: 20px 0;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #E5E7EB;
+            color: #6B7280;
+            font-size: 14px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #E5E7EB;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background: #F3F4F6;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
+<div class="container">
+    <div class="lang-switcher">
+        <a href="/policy/">한국어</a> |
+        <span class="current">English</span> |
+        <a href="/policy/ja/">日本語</a>
+    </div>
 
-<h1>Privacy Policy</h1>
-<p>Routiny - Habit Tracker</p>
+    <h1>Privacy Policy</h1>
+    <div class="app-name">Routiny - Habit Tracker</div>
 
-<div class="summary">
-<strong>📌 Summary</strong><br>
-Routiny is an <strong>ad-free, clean app</strong>.<br>
-We do not collect any personal information. All habit data is stored only on your device.
+    <div class="highlight">
+        <strong>📌 Summary</strong><br>
+        Routiny is an <strong>ad-free, clean app</strong>.<br>
+        We do not collect any personal information. All habit data is stored only on your device.
+    </div>
+
+    <h2>1. Data Collection and Use</h2>
+
+    <h3>1.1 Information Stored Locally</h3>
+    <p>Routiny stores the following information on your device to provide app functionality:</p>
+
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Purpose</th>
+            <th>Storage Location</th>
+        </tr>
+        <tr>
+            <td>Habit names, settings</td>
+            <td>Habit management features</td>
+            <td>User's device (Local DB)</td>
+        </tr>
+        <tr>
+            <td>Habit completion records</td>
+            <td>Statistics and calendar display</td>
+            <td>User's device (Local DB)</td>
+        </tr>
+    </table>
+
+    <h3>1.2 We Do Not Collect Personal Information</h3>
+    <p>Routiny does not operate any servers and will never collect or transmit the following information:</p>
+    <ul>
+        <li>Personally identifiable information such as name, email, or phone number</li>
+        <li>Location data (GPS)</li>
+        <li>Device identifiers (Android ID, ADID, etc.)</li>
+        <li>Contacts or media files</li>
+    </ul>
+
+    <h2>2. Advertising and Third-Party Services</h2>
+
+    <div class="highlight">
+        <strong>🚫 No Ads</strong><br>
+        This app does not use any advertising services, including Google AdMob.<br>
+        Therefore, we do not collect or track any advertising identifiers.
+    </div>
+
+    <p>We do not use any third-party SDKs (Software Development Kits) that collect user data.</p>
+
+    <h2>3. Sharing Feature</h2>
+
+    <p>Routiny provides a feature that allows users to share their habit achievements on social media.</p>
+
+    <div class="highlight">
+        <strong>📤 About the Sharing Feature</strong><br>
+        • Sharing is initiated only by the user's direct action.<br>
+        • Shared content includes: habit name, achievement status, app branding.<br>
+        • The app does not separately collect or store shared content.<br>
+        • Sharing uses the device's native sharing function and involves no third-party SDK data collection.
+    </div>
+
+    <h2>4. Data Storage and Deletion</h2>
+
+    <p><strong>Storage:</strong> All data is securely stored on the user's device (using Hive Database).</p>
+    <p><strong>Deletion:</strong> No account cancellation process is needed. <strong>Uninstalling the app will immediately and permanently delete all data stored on the device.</strong></p>
+
+    <h2>5. App Permissions</h2>
+
+    <p>Routiny requests only the minimum permissions necessary for its features.</p>
+    <table>
+        <tr>
+            <th>Permission</th>
+            <th>Purpose</th>
+            <th>Required</th>
+        </tr>
+        <tr>
+            <td>Notifications</td>
+            <td>Send habit reminders at user-set times (local notifications)</td>
+            <td>Optional</td>
+        </tr>
+    </table>
+    <p>* The app's core features (tracking) are available even without notification permission.</p>
+
+    <h2>6. Children's Privacy</h2>
+    <p>We do not collect personal information from children under 13 years of age. Since the app does not require or collect any personal information, children can use it safely.</p>
+
+    <h2>7. Contact Us</h2>
+    <p>If you have any questions regarding this privacy policy, please contact us:</p>
+
+    <table>
+        <tr>
+            <th>Team</th>
+            <td>Routiny Development Team</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td><a href="mailto:routinyservice@gmail.com">routinyservice@gmail.com</a></td>
+        </tr>
+    </table>
+
+    <h2>8. Changes</h2>
+    <p><strong>Effective date:</strong> February 1, 2026</p>
+    <p><strong>Previous version:</strong> December 12, 2025</p>
+    <p>This policy may be updated as the app is updated. Any changes will be communicated through in-app notifications.</p>
+
+    <div class="footer">
+        <p><strong>Routiny</strong></p>
+        <p>Contact: routinyservice@gmail.com</p>
+        <p>Copyright &copy; 2025-2026 Routiny. All rights reserved.</p>
+    </div>
 </div>
-
-<h2>1. Data Collection and Use</h2>
-
-<h3>1.1 Information Stored Locally</h3>
-<p>Routiny stores the following information on your device to provide app functionality:</p>
-
-<table>
-<tr><th>Item</th><th>Purpose</th><th>Storage Location</th></tr>
-<tr><td>Habit names, settings</td><td>Habit management features</td><td>User's device (Local DB)</td></tr>
-<tr><td>Habit completion records</td><td>Statistics and calendar display</td><td>User's device (Local DB)</td></tr>
-</table>
-
-<h3>1.2 We Do Not Collect Personal Information</h3>
-<p>Routiny does not operate any servers and will never collect or transmit the following information:</p>
-<ul>
-    <li>Personally identifiable information such as name, email, or phone number</li>
-    <li>Location data (GPS)</li>
-    <li>Device identifiers (Android ID, ADID, etc.)</li>
-    <li>Contacts or media files</li>
-</ul>
-
-<h2>2. Advertising and Third-Party Services</h2>
-<p><strong>🚫 No Ads</strong><br>
-This app does not use any advertising services, including Google AdMob. Therefore, we do not collect or track any advertising identifiers.</p>
-<p>We do not use any third-party SDKs that collect user data.</p>
-
-<h2>3. Sharing Feature</h2>
-<p>Routiny provides a feature that allows users to share their habit achievements on social media.</p>
-<p><strong>📤 About the Sharing Feature</strong></p>
-<ul>
-    <li>Sharing is initiated only by the user's direct action.</li>
-    <li>Shared content includes: habit name, achievement status, app branding.</li>
-    <li>The app does not separately collect or store shared content.</li>
-    <li>Sharing uses the device's native sharing function and involves no third-party SDK data collection.</li>
-</ul>
-
-<h2>4. Data Storage and Deletion</h2>
-<p><strong>Storage:</strong> All data is securely stored on the user's device (using Hive Database).</p>
-<p><strong>Deletion:</strong> No account cancellation process is needed. <strong>Uninstalling the app will immediately and permanently delete all data stored on the device.</strong></p>
-
-<h2>5. App Permissions</h2>
-<p>Routiny requests only the minimum permissions necessary for its features.</p>
-
-<table>
-<tr><th>Permission</th><th>Purpose</th><th>Required</th></tr>
-<tr><td>Notifications</td><td>Send habit reminders at user-set times (local notifications)</td><td>Optional</td></tr>
-</table>
-
-<p>* The app's core features (tracking) are available even without notification permission.</p>
-
-<h2>6. Children's Privacy</h2>
-<p>We do not collect personal information from children under 13 years of age. Since the app does not require or collect any personal information, children can use it safely.</p>
-
-<h2>7. Contact Us</h2>
-<p>If you have any questions regarding this privacy policy, please contact us:</p>
-
-<table>
-<tr><td>Team</td><td>Routiny Development Team</td></tr>
-<tr><td>Email</td><td><a href="mailto:routinyservice@gmail.com">routinyservice@gmail.com</a></td></tr>
-</table>
-
-<h2>8. Changes</h2>
-<p><strong>Effective date:</strong> February 1, 2026</p>
-<p><strong>Previous version:</strong> December 12, 2025</p>
-<p>This policy may be updated as the app is updated. Any changes will be communicated through in-app notifications.</p>
-
-<div class="footer">
-    <p><strong>Routiny</strong></p>
-    <p>Contact: routinyservice@gmail.com</p>
-    <p>Copyright &copy; 2025-2026 Routiny. All rights reserved.</p>
-</div>
-
 </body>
 </html>

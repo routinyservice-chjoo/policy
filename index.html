@@ -22,6 +22,30 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
+        .lang-switcher {
+            text-align: center;
+            padding: 12px;
+            margin-bottom: 20px;
+            background: #f3f4f6;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+
+        .lang-switcher a {
+            color: #3B82F6;
+            text-decoration: none;
+            padding: 0 8px;
+        }
+
+        .lang-switcher a:hover {
+            text-decoration: underline;
+        }
+
+        .lang-switcher .current {
+            font-weight: bold;
+            color: #1F2937;
+        }
+
         h1 {
             color: #3B82F6;
             font-size: 32px;
@@ -93,6 +117,12 @@
 </head>
 <body>
 <div class="container">
+    <div class="lang-switcher">
+        <span class="current">한국어</span> |
+        <a href="/policy/en/">English</a> |
+        <a href="/policy/ja/">日本語</a>
+    </div>
+
     <h1>개인정보처리방침</h1>
     <div class="app-name">루티니 (Routiny) - 습관 트래커</div>
 
